@@ -9,6 +9,8 @@ Jpad - Servlet
 Log:
 2017-12-28
 Start
+Readme
+Architecture
 
 TODO:
 Everything
