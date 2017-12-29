@@ -17,18 +17,18 @@
 		
 		Object
 		<br />
-		<input type="submit" value="Create" />
-		<input type="submit" value="Access" />
-		<input type="submit" value="Modify" />
-		<input type="submit" value="Delete" />
+		<input type="submit" name="op" value="Create" />
+		<input type="submit" name="op" value="Access" />
+		<input type="submit" name="op" value="Modify" />
+		<input type="submit" name="op" value="Delete" />
 		<p />
 	
 		Access
 		<br />
-		<input type="submit" value="Login" />
-		<input type="submit" value="Logoff" />
-		<input type="submit" value="Fail" />
-		<input type="submit" value="Reset" />
+		<input type="submit" name="op" value="Login" />
+		<input type="submit" name="op" value="Logoff" />
+		<input type="submit" name="op" value="Fail" />
+		<input type="submit" name="op" value="Reset" />
 	</form>
 </body>
 </html>
