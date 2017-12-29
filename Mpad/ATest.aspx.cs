@@ -10,6 +10,7 @@ namespace Mpad
 
         }
 
+        // Object Event Handlers
         protected void Button1_Click(object sender, EventArgs e)
         {
             PaEvt newPaEvt = new PaEvt();
@@ -32,6 +33,31 @@ namespace Mpad
         {
             PaEvt newPaEvt = new PaEvt();
             newPaEvt.recObjEvt(ObjEvt.DELETE);
+        }
+
+        // Access Event Handlers
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            PaEvt newPaEvt = new PaEvt();
+            newPaEvt.recAccEvt(AccEvt.LOGIN);
+        }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            PaEvt newPaEvt = new PaEvt();
+            newPaEvt.recAccEvt(AccEvt.LOGOFF);
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            PaEvt newPaEvt = new PaEvt();
+            newPaEvt.recAccEvt(AccEvt.FAIL);
+        }
+
+        protected void Button8_Click(object sender, EventArgs e)
+        {
+            PaEvt newPaEvt = new PaEvt();
+            newPaEvt.recAccEvt(AccEvt.RESET);
         }
     }
 }
