@@ -14,16 +14,12 @@
 
             <a href="Default.aspx">Home</a>
             <br />
-
             <a href="ATest.aspx">Test</a>
             <br />
-
             <a href="AHtml.html">HTML</a>
             <br />
-
             <a href="VaData.aspx">View</a>
             <br />
-
             <a href="UAdm.aspx">User Admin</a>
             <br />
         </div>

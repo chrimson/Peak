@@ -4,12 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Test</title>
+    <title>MPAD Test</title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            Test
+            MPAD Test
+            <p />
+
+            <a href="Default.aspx">Home</a>
             <p />
 
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Create" />
