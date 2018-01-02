@@ -17,11 +17,20 @@ public class PaEvt {
 
         return "fff";
     }
+
+    public String recAccEvt(AccEvt accEvt) {
+        conType = accEvt.conType;
+        evtType = accEvt.evtType;
+
+        savePaEvt();
+
+        return "fff";
+    }
     
     private void savePaEvt()
     {
         // SQL depending on private members
 
-        System.out.format("%s %s\n", new String[]{conType, evtType});
+        System.out.format("%s %s%n", new String[]{conType, evtType});
     }
 }
