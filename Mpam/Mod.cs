@@ -1,4 +1,6 @@
-﻿namespace Mpam
+﻿using System.Data.SqlClient;
+
+namespace Mpam
 {
     public class PaEvt
     {
@@ -32,9 +34,25 @@
 
         private void savePaEvt()
         {
-            // SQL depending on private members
-
             System.Diagnostics.Debug.WriteLine("{0} {1}", conType, evtType);
+
+            // SQL depending on private members
+            SqlConnection aCon = new SqlConnection(
+                "Server=ADMIN-PC\\SQLEXPRESS;" +  // or localhost
+                "Database=peak;" +
+                "Trusted_Connection=true");
+            try
+            {
+                aCon.Open();
+
+                string cmdTxt = string.Format(
+                    "INSERT INTO Aud VALUES ('{0}', '{1}')",
+                    conType, evtType);
+                SqlCommand cmd = new SqlCommand(cmdTxt, aCon);
+
+                SqlDataReader data = cmd.ExecuteReader();
+            }
+            catch { }
         }
     }
 
