@@ -7,12 +7,14 @@ Jpam - Java
 Jpad - Servlet
 
 Log:
-2018-01-02
-M MS SQL
+2018-01-03
+J MS SQL Server JDBC
 
 TODO:
-SQL
 Auth
+
+2018-01-02
+M MS SQL
 
 2017-12-29
 M Library
